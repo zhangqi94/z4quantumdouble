@@ -1,0 +1,11 @@
+*.DS_Store 
+*.sh
+*.out
+*.pyc
+*.pdf
+*.json
+*.p
+*.log
+*.pt
+data/
+src/basis
