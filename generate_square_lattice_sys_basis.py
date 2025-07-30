@@ -4,13 +4,16 @@ from ncon import ncon
 import argparse
 import scipy
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument("-D", type=int, default=4)
+####################################################################################################
+parser = argparse.ArgumentParser()
+parser.add_argument("-D", type=int, default=4)
 
-# args = parser.parse_args() 
-# D=args.D
+args = parser.parse_args() 
+D=args.D
 
-D=8
+
+####################################################################################################
+# D=8
 q=4
 Id=np.eye(q)
 Id_D=np.eye(D)

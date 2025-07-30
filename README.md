@@ -37,7 +37,7 @@ The relevant dataset is available at https://github.com/zhangqi94/z4quantumdoubl
 
 ## Citation
 
-If you use this code in your work, please cite:
+The corresponding paper can be cited as:
 ```
 @article{zhang2025topological,
 }
