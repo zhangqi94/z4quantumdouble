@@ -6,7 +6,7 @@ import scipy
 
 ####################################################################################################
 parser = argparse.ArgumentParser()
-parser.add_argument("-D", type=int, default=4)
+parser.add_argument("--D", type=int, default=4)
 
 args = parser.parse_args() 
 D=args.D

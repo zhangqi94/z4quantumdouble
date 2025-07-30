@@ -15,11 +15,14 @@ Please ensure the following packages are installed:
 
 ### Training
 
-**Basic example for optimizing the ipeps:**
+**Generating the C4v-symmetric iPEPS tensor basis:**
+
 Before starting the optimization, make sure all required packages are installed and that the C4v-symmetric iPEPS tensor basis has been generated, which needs to be done only once for each bond dimension D:
 ```
-python3 generate_square_lattice_sys_basis.py -D 4
+python3 generate_square_lattice_sys_basis.py --D 4
 ```
+
+**Basic example for optimizing the ipeps:**
 
 To start a basic optimization run with random initial tensors and specified model parameters (`h_x`, `h_z`, `h_w`), use:
 ```
