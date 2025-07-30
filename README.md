@@ -16,10 +16,15 @@ Please ensure the following packages are installed:
 ### Training
 
 **Basic example for optimizing the ipeps:**
+Before starting the optimization, make sure all required packages are installed and that the C4v-symmetric iPEPS tensor basis has been generated, which needs to be done only once for each bond dimension D:
+```
+python3 generate_square_lattice_sys_basis.py -D 4
+```
+
 To start a basic optimization run with random initial tensors and specified model parameters (`h_x`, `h_z`, `h_w`), use:
 ```
 python3 main.py --h_x 0.01 --h_z 0.01 --h_w 0.01 \
-    -D 4 --chi 100 --instate "random" --output_path "data/ipeps_output"
+    --D 4 --chi 100 --instate "random" --output_path "data/ipeps_output"
 ```
 - `D`: iPEPS bond dimension
 - `chi`: Environment bond dimension for CTMRG
